@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<link rel="stylesheet" type="text/css" th:href="@{index.css}" />
+</head>
+
+<body>
+	<header>saizeriya</header>
+	<div id="top_image">画像</div>
+	<form method="post" action="/find">
+		<div>
+			<label><input type="checkbox" name="allergy" value="egg"> 卵</label>
+			<label><input type="checkbox" name="allergy" value="milk"> 乳</label>
+			<label><input type="checkbox" name="allergy" value="wheat"> 小麦</label>
+			<label><input type="checkbox" name="allergy" value="buckwheat"> 蕎麦</label>
+			<label><input type="checkbox" name="allergy" value="peanuts"> 落花生</label>
+			<label><input type="checkbox" name="allergy" value="shrimp"> えび</label>
+			<label><input type="checkbox" name="allergy" value="crab"> かに</label>
+			<label><input type="checkbox" name="allergy" value="walnuts"> くるみ</label>
+			<label><input type="checkbox" name="allergy" value="soy"> 大豆</label>
+			<label><input type="checkbox" name="allergy" value="beef"> 牛肉</label>
+			<label><input type="checkbox" name="allergy" value="chicken"> 鶏肉</label>
+			<label><input type="checkbox" name="allergy" value="pork"> 豚肉</label>
+			<label><input type="checkbox" name="allergy" value="abalone"> アワビ</label>
+			<label><input type="checkbox" name="allergy" value="squid"> イカ</label>
+			<label><input type="checkbox" name="allergy" value="salmon roe"> いくら</label>
+			<label><input type="checkbox" name="allergy" value="salmon"> さけ</label>
+			<label><input type="checkbox" name="allergy" value="mandarin orange"> オレンジ</label>
+			<label><input type="checkbox" name="allergy" value="kiwi"> キウイ</label>
+			<label><input type="checkbox" name="allergy" value="peach"> もも</label>
+			<label><input type="checkbox" name="allergy" value="apple"> りんご</label>
+			<label><input type="checkbox" name="allergy" value="macadamia nuts"> マカダミアナッツ</label>
+			<label><input type="checkbox" name="allergy" value="yam"> 山芋</label>
+			<label><input type="checkbox" name="allergy" value="gelatin"> ゼラチン</label>
+			<label><input type="checkbox" name="allergy" value="banana"> バナナ</label>
+			<label><input type="checkbox" name="allergy" value="sesame"> ゴマ</label>
+			<label><input type="checkbox" name="allergy" value="cashew nuts"> カシューナッツ</label>
+			<label><input type="checkbox" name="allergy" value="almond"> アーモンド</label>
+		</div>
+		<input type="submit" value="送信">
+	</form>
+	<script th:src="@{index.js}"></script>
+</body>
+
+</html>
