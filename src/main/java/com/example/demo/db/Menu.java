@@ -1,7 +1,6 @@
 package com.example.demo.db;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -11,11 +10,11 @@ import lombok.NoArgsConstructor;
 @Entity
 public class Menu {
 	@Id
-	@GeneratedValue
 	private int id;
 	
 	private int price;
 	private int calorie;
+	private double salt;
 	private String name;
 	private String path;
 }
